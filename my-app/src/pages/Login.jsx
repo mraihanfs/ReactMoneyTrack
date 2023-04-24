@@ -24,11 +24,12 @@ const Login = () => {
             }
         }
     }
-    
+
+
     return (
-        <div className='bg-blue-400'>
+        <div className='bg-slate-400'>
             <Card flagHandle={fillData}/>
-            <Modal openModal={open} content={content} title={title} flag={flag} />
+            <Modal openModal={open} content={content} title={title} flag={flag}/>
         </div>
     )
 }

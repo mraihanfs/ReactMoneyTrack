@@ -5,6 +5,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 const Modal = ({ openModal, content, title, flag }) => {
     const onCloseHandler = () =>{
@@ -29,7 +30,7 @@ const Modal = ({ openModal, content, title, flag }) => {
             <DialogActions>
                 {flag ? (
                     <Button>
-                        Lanjutkan
+                        <Link to="/homepage">Lanjutkan</Link>
                     </Button>
                 ) : (
                     <Button onClick={onCloseHandler}>Reload</Button>
